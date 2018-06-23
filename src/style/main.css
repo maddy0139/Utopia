@@ -1,0 +1,1042 @@
+/* 
+Custom CSS for...
+'Modern Business' HTML Theme by Start Bootstrap
+
+All Start Bootstrap themes are licensed under Apache 2.0. 
+For more info and more free Bootstrap 3 HTML themes, visit http://startbootstrap.com!
+*/
+
+/* Global Styles */
+
+html, body {
+    height: 100%;
+	font-size:100%;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+   
+	font-size:80%;
+	background-color:#f2f2f2;
+}
+
+
+hr {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+.layout {
+    overflow: hidden;
+	min-height: 100%;
+	margin-bottom: -115px; 
+}
+.layout:after {
+  content: "";
+  display: block;
+}
+
+
+/* ===========================================
+1 Input Section
+============================================== */
+.inputSection{margin:1em auto}
+ul.inputTxt{
+	list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid #c9c9c9;
+    overflow: hidden;
+}
+ul.inputTxt li{
+	display:block;	
+	vertical-align: top;
+	text-align: center;
+	float:left;
+	padding-bottom:10px;
+	width:120px;
+}
+ul.inputTxt li input{
+	width: 80%;
+    border: 0px solid transparent;
+    font-size: 1.2em;
+    padding: 6px;
+    text-align: center;
+    color: #00adef;
+	border-radius: 4px;
+}
+ul.inputTxt li span{
+	display: block;
+    margin: 0px auto;
+
+    width: 99%;
+    line-height: 1.24;
+    padding-top: .8em;
+    font-size: 1em;
+}
+/* ===========================================
+2 Table Section 
+============================================== */
+
+table.csTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 .8em;
+}
+
+
+.csTable>thead{
+    border: 0px solid transparent;
+}
+
+.csTable>thead>tr{
+	
+    margin-bottom: 20px;
+    background: #00adef;
+    padding: 6px 0;
+}
+.csTable>thead>tr>th {
+    border-bottom-width: 2px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1em;
+    border: 0px solid #eee;
+	padding: 8px 0;
+	border-right-width: 0;
+    border-left-width: 1px;
+}
+.csTable>thead>tr>th>div{
+    border-left: 0px solid #eee;
+    padding: 8px 6px;
+    font-weight: 600;
+}
+
+.csTable>thead>tr>th:first-child{
+border-radius: 6px 0px 0px 6px;
+}
+.csTable>thead>tr>th:first-child>div, .csTable>tbody>tr>td:first-child>div{
+border-left: 0px solid #fff;
+}
+.csTable>thead>tr>th:last-child{
+border-radius: 0px 6px 6px 0px;
+}
+
+.csTable>tbody{
+    border: 0px solid transparent;
+}
+
+.csTable>tbody>tr{
+	
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 6px 0;
+}
+.csTable>tbody>tr>td {
+    border-bottom-width: 2px;
+    color: #000;
+    font-weight: normal;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    padding: 8px 6px;
+    border-spacing: 0 .8em;
+	border-right-width: 0;
+    border-left-width: 1px;
+}
+
+.csTable>tbody>tr>td>div{
+	width: inherit;
+    border-left: 0px solid #dcdcdc;
+    padding: 8px 6px;
+    font-weight: 400;
+    letter-spacing: .03em;
+}
+
+.csTable>tbody>tr>td:first-child{
+border-radius: 6px 0px 0px 6px;
+border-left-width: 1px;
+}
+.csTable>tbody>tr>td:first-child>div{
+	color:#00adef;
+}
+.csTable>tbody>tr>td:last-child{
+	border-radius: 0px 6px 6px 0px;
+    border-right-width: 1px;
+}
+.csTable a.fa {
+    color: #666;
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+	border-radius:3px;
+	padding-top:2px;
+}
+.csTable a.fa.fa-trash-o{
+	color: red;
+}
+.csTable a.fa:hover{
+	text-decoration:none;
+	background-color:#005eb8;
+	color:#fff;
+}
+.csTable th a.fa{color:#337ab7;}
+/*.csTable th a.fa:hover{color:#337ab7;}*/
+.cspage .pagination{margin:0;}
+.cspage .pagination a{
+	    color: #fff;
+    background-color: #bbb;
+	padding:1px 6px;
+}
+.pagination>li.active>a, .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+    
+    background-color: #005eb8;
+   color: #fff;
+   border-color:#ddd;
+}
+.cspage .fa-angle-left{margin-right: 9px;}
+
+.cspage .fa-angle-right{margin-left: 9px;}
+
+/* ===========================================
+2 Button & dropdown 
+============================================== */
+.btn-tool, .btn-M{
+	display: inline-block;
+    border: 1px solid #bbb !important;
+        padding: 6px 5px;
+    text-align: left;
+    border-radius: 3px !important;
+    font-size: 1em;
+    color: #000 !important;
+    background-color: #fff;
+	margin-bottom:.5em;
+}
+.btn-M{
+	border: 1px solid #00adef;
+}
+.btn-M.hvr-underline-from-center:before{
+	background: #00adef;
+    height: 1px
+}
+
+.btn-tool.hvr-underline-from-left:before{
+	background: #00adef;
+    height: 1px;
+}
+.btn-tool:hover, .btn-tool.active{
+	color: #00adef;
+    border-color: #00adef;
+	box-shadow: none;
+}
+.form-group.btn-search {
+    position: relative;
+    margin-right: 8px;
+    margin-bottom: 0px;
+}
+.btn-search input{
+	width: 150px;
+    margin-top: 0px;
+}
+.btn-search a {
+   margin-left: 0;
+    background-color: #fff;
+    height: 30px;
+    width: 21px;
+    text-align: center;
+    margin: 0 0 0 0;
+    vertical-align: top;
+    padding-top: 9px;
+    color: #000;
+    position: absolute;
+    left: 80%;
+    top: 2px;
+	text-decoration:none;
+}
+
+.mg5{
+	margin-right: .5em;
+}
+.mg20{
+	margin-bottom: 3em;
+}
+.mgb5{
+	margin-bottom: .5em;
+}
+.dlPostion>div{
+float:left;
+}
+
+span.note{
+	font-size: 10px;
+    display: block;
+    position: relative;
+    top: 0;
+    right: 0;
+    text-align: left;
+    max-width: 150px;
+    float: right;
+}
+.customSelect {
+    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+    /*background: url(../../images/downArrow.png) no-repeat right white;*/
+    border: 1px solid #ccc;
+    display: block;
+    position: relative;
+    padding: 0;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.customSelect select {
+    background: transparent;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 1em;
+    border: 0;
+    padding: 0;
+    min-width:110px;
+	width: 100%;
+    height: 32px;
+	padding-left: 10px;
+	outline:0px solid transparent;
+}
+.dlPostion .customSelect select {
+    
+	width: 110px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+	
+}
+.customSelect select option {
+    padding: 5px;
+}
+select:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+.csForm{
+	font-size: 1em;
+    line-height: 1.4;
+    color: #000;
+}
+.csForm label.csblue{
+color:#005eb8;
+}
+
+button.up {
+	position: absolute;
+    right: 16px;
+    height: 32px;
+    background-color: #01a8dd;
+    top: 24px;
+    border-radius: 0px 4px 4px 0;
+    width: 36px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4em;
+    padding-top: 0;
+    border: 0px solid transparent;
+}
+.csForm .form-group {
+    margin-bottom: 16px;
+}
+
+.csForm textarea.form-control {
+    height: 250px;
+}
+.csForm label {
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: .04em;
+    color: #000;
+}
+
+.csForm .form-control {
+    
+    font-size: 1em;
+    line-height: 1.4;
+    color: #000;
+}
+
+.csForm .add-on {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    background-color: #01a8dd;
+    border: 1px solid #ccc;
+	border-left-color:#01a8dd;
+    border-radius: 4px;
+	    display: table-cell;
+		border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+	width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+/* ===========================================
+5 footer 
+============================================== */
+
+footer, .layout:after {
+  height: 0px; 
+}
+
+footer{
+	/*background: url(../../images/footer.png) no-repeat right bottom transparent;*/
+	width: 100%;
+    overflow: hidden;
+}
+footer>div{
+	position: relative;
+    bottom: -17px;
+}
+/* ===========================================
+My Request 
+============================================== */
+.csView{}
+.csView .form-group {
+    margin-bottom: 1.5em;
+    padding: .7em;
+    background-color: #fff;
+}
+.csView .hlg{
+	min-height:230px;
+}
+.csView .ext{
+	background-color: transparent;
+    margin-bottom: .5em;
+}
+.csView .ext a{
+	width: auto;
+	margin-right: 30px;
+}
+.csView .ext p{margin-bottom:10px;}
+.csView .ext label{font-weight:600;}
+.ext button.up {
+    
+    right: 25px;
+    top: 33px;
+	}
+.csView label.csblue {
+    color: #005eb8;
+	font-weight:600;
+}
+
+#idCommentBlock textarea.form-control {
+    height: 293px;
+}
+.csView label {
+   font-size: 1em;
+    font-weight: normal;
+    letter-spacing: .04em;
+    color: #333;
+}
+.csView p {
+    font-size: 1.2em;
+    font-weight: normal;
+    letter-spacing: 0;
+    color: #000;
+    line-height: 1.5;
+	margin: 0;
+	min-height:30px;
+}
+.csView hr {
+    margin-top: 0;
+    margin-bottom: 16px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.csView.form-control {
+    
+    font-size: 1em;
+    line-height: 1.4;
+    color: #000;
+}
+/*
+.{
+	clear: both;
+    margin-bottom: 1.8em;
+}
+*/
+.csCaption span{
+	background-color: #01a8dd;
+    padding: .2em .6em;
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 1em;
+    display: inline-block;
+    margin-right: .5em;
+	}
+
+
+/* ===========================================
+stage 
+============================================== */
+.stage hr{}
+ul.csVeiwSt{ 
+	margin: 0 auto;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin-top: -42px;
+	overflow:hidden;
+	margin-bottom: 3em;	
+}
+ul.csVeiwSt li{ 
+	float: left;
+    margin-bottom: 0px;
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    background-color: #666;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+    color: #fff;
+    font-size: 2em;
+    padding-top: .3em;
+}
+ul.csVeiwSt li.active{
+	background-color:#00adef;
+	 width: 50px;
+    height: 50px !important;
+	padding-top: .3em;
+}
+.stage{ margin-top:30px;}
+ul.csVeiwSt li p {
+    font-size: .5em;
+    color: #333;
+    margin-top: 1em;
+    position: absolute;
+    max-width: 100px;
+    text-align: left;
+}
+ul.csVeiwSt li:last-child p {
+   
+    text-align: left;
+}
+
+/* ===========================================
+fix table colume 
+============================================== */
+div.fixTableRq {
+    overflow: hidden;
+    margin-left: 0;
+    overflow-x: auto;
+    }
+	/*
+.headcol {
+	left: 0;
+    position: absolute;
+    text-align: left;
+    width: 100px;
+    }
+.headcol1 {
+  left: 100px;
+    position: absolute;
+    text-align: left;
+    width: 70px;
+    }
+	*/
+.csEx{
+	position:relative;
+}
+
+.fixTableRq.csEx > .fixed-column{
+left:0;
+}
+
+.fixTableRq>.fixed-column {
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    border-right: 0px solid #ddd;
+    left: 10px;
+}
+.LayoutFix{margin-bottom:5px; width: auto;
+    max-width: none;}
+.fixed-column{
+		width:120px;
+	}
+
+.fixed-column>thead>tr>th:last-child{border-radius:0}
+.fixed-column>thead>tr>th:first-child{
+border-radius: 6px 0px 0px 6px;
+}
+.fixed-column>tbody>tr>td:last-child{border-radius:0}
+.fixed-column>tbody>tr>td:first-child{
+border-radius: 6px 0px 0px 6px;
+}
+.LayoutFix>thead>tr>th{
+	padding: 8px 5px;
+}
+.fixed-column>thead>tr>th{
+	padding: 8px 8px;
+}
+.LayoutFix>thead>tr {
+    margin-bottom: 20px;
+     background: transparent; 
+    padding: 6px 0;
+}
+.tblCol{
+background-color:#0085ca;
+}
+.tblCol1{
+background-color:#0085ca;
+}
+.tblCol2{
+background-color:#8a1c61;
+}
+.tblCol3{
+background-color:#cf0170;
+}
+.tblCol4{
+background-color:#d9291c;
+}
+.tblCol5{
+background-color:#ee8a00;
+}
+.tblCol6{
+background-color:#ccdc00;
+}
+.tblCol7{
+background-color:#6ba338;
+}
+.tblCol8{
+background-color:#01b288;
+}
+.tblCol9{
+background-color:#0e0d99;
+}
+.tblCol10{
+background-color:#ffc72c;
+}
+.tblCol11{
+background-color:#b5bd0f;
+}
+.tblCol12{
+background-color:#b5cf0f;
+}
+
+.btn-search input {
+    width: 150px;
+    margin-top: 0px;
+    border-radius: 4px;
+    border-color: #ddd;
+}
+
+
+.actionBtn a {
+    border-radius: 4px;
+}
+
+section.topPedd .actionBtn {
+    padding-right: 0;
+}
+
+/*======================*/
+
+#scrollbox3 {
+    overflow: auto;
+    width: 400px;
+    height: 360px;
+    padding: 0 5px;
+    border: 1px solid #b7b7b7;
+}
+
+.track3 {
+    width: 10px;
+    background: rgba(0, 0, 0, 0);
+    margin-right: 2px;
+    border-radius: 10px;
+    -webkit-transition: background 250ms linear;
+    transition: background 250ms linear;
+}
+
+.track3:hover,
+.track3.dragging {
+    background: #d9d9d9; /* Browsers without rgba support */
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.handle3 {
+    width: 7px;
+    right: 0;
+    background: #999;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+    -webkit-transition: width 250ms;
+    transition: width 250ms;
+}
+
+.track3:hover .handle3,
+.track3.dragging .handle3 {
+    width: 10px;
+}
+/* ===========================================
+Page loader 
+============================================== */
+
+.loading {
+  position: fixed;
+  z-index: 999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* Transparent Overlay */
+.loading:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+/* :not(:required) hides these rules from IE9 and below */
+.loading:not(:required) {
+  /* hide "loading..." text */
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.loading:not(:required):after {
+  content: '';
+  display: block;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  -webkit-animation: spinner 1500ms infinite linear;
+  -moz-animation: spinner 1500ms infinite linear;
+  -ms-animation: spinner 1500ms infinite linear;
+  -o-animation: spinner 1500ms infinite linear;
+  animation: spinner 1500ms infinite linear;
+  border-radius: 0.5em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+  box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+}
+
+/* Animation */
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+ul.csVeiwSt li p {   
+    max-width: 76px;       
+	    word-wrap: normal;
+	}
+
+@media only screen and (max-width: 900px) {
+.dlPostion .customSelect select {
+    width: 100%;
+}
+
+.btn-search input{
+	width: 100%;
+
+}
+.btn-search a { 
+    left: 90%; 
+}
+
+
+.dlPostion > div {
+    float: none;
+    margin-top: 10px;
+        width: 100%;
+}
+	ul.csVeiwSt{
+    width: 100%;
+	margin-bottom:1em
+	}
+	/*
+	ul.csVeiwSt p{
+	display:none;
+	}
+	*/
+	ul.inputTxt li input{
+	width: 80%;
+    
+}
+ul.csVeiwSt li p {
+    font-size: 12px;
+    word-wrap:normal
+   
+    }
+ul.inputTxt li span{
+	
+    width: 90%;
+    
+}
+
+    
+    /* Force table to not be like tables anymore */
+	#no-more-tables table, 
+	#no-more-tables thead, 
+	#no-more-tables tbody, 
+	#no-more-tables th, 
+	#no-more-tables td, 
+	#no-more-tables tr { 
+		display: block; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	#no-more-tables thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	#no-more-tables tr { border: 1px solid #ccc; }
+ 
+	#no-more-tables td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+		white-space: normal;
+		text-align:left;
+	}
+ 
+	#no-more-tables td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+ 
+	/*
+	Label the data
+	*/
+	#no-more-tables td:before { content: attr(data-title); }
+}
+i.csGreen.fa.fa-circle {
+    text-align: center;
+    color: green;
+    font-size: 18px;
+    display: block;
+}
+i.csRed.fa.fa-circle {
+    text-align: center;
+    color: red;
+    font-size: 18px;
+    display: block;
+}
+.u-wm-main-box:before {
+  /* content: "DashBoard.aspx";*/
+  content: "!";
+   color:#fff;
+}
+
+@media (max-width: 767px)
+{
+   .dashboardContent ul.inputTxt li {
+    display: block;
+    vertical-align: top;
+    text-align: center;
+ 	float: none; 
+    padding-bottom: 10px;
+    width: 100%  !important;
+        margin: 0 auto !important;
+	}
+	ul.csVeiwSt li p {
+   
+  
+        word-wrap: initial;
+
+	}
+	
+
+}
+
+@media (max-width: 640px){
+.stage hr{
+	display:none;
+	}
+	
+	ul.csVeiwSt li p {
+    font-size: .5em;
+    color: #333;
+    margin-top: -25px;
+    position: absolute;
+    max-width: 100%;
+    text-align: left;
+    left: 75px;
+
+    }
+ 	ul.csVeiwSt li {
+	    float: none; 
+		
+	}
+	.u-wm-master .u-wm-main-box .ms-rtestate-field li {
+	    margin-bottom: 5px;
+	    margin-left: 0 !important;
+	    margin-top: 20px;
+	
+	}
+	ul.csVeiwSt li:last-child p {
+	     right: auto;
+	    text-align: left;
+	}
+
+}
+
+#idCSATFeedback #idProcurementClarification textarea.form-control {
+ height: auto !important; 
+}
+
+.u-wm-topnav-box .row{
+    max-width:100%;
+}
+.section.u-wm-footer .row{
+    max-width:100%;
+}
+
+/*Title Color In header*/
+
+.u-wm-logo h2{
+    color: #8a1c61;
+    padding-top:8px; 
+}
+
+/*for desktop allignment*/
+@media (min-width:1264px){
+   
+.btn-search input {
+    width: 142px !important;
+    margin-top: 0px;
+    border-radius: 4px;
+    border-color: #ddd;
+}
+.dlPostion .customSelect select {
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.customSelect select {
+    background: transparent;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 13px;
+    border: 0;
+    padding: 0;
+    min-width: 100px;
+    width: 100%;
+    height: 32px;
+    padding-left: 6px;
+    outline: 0px solid transparent;
+}
+
+.btn-tool, .btn-M {
+    display: inline-block;
+    border: 1px solid #bbb !important;
+    padding: 6px 5px;
+    text-align: left;
+    border-radius: 3px !important;
+    font-size: 13px;
+    color: #000 !important;
+    background-color: #fff;
+    margin-bottom: .5em;
+}
+}

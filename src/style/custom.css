@@ -1,0 +1,735 @@
+body{
+	font-size: 80%;
+    background-color: #f2f2f2;
+}
+#loader{
+	display:none;
+}
+
+.clsReadOnly{
+	color:black !important;
+}
+button.close{
+	width:20px;
+	min-width: 20px;
+	opacity: 1;
+}
+.modal-body table th {
+    text-align: center;
+}
+.clsError{
+	font-size:11px;
+}
+
+#idDocumentsSubmitted a{
+	min-width: 40px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.disablePeople::before {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .1);
+    z-index: 99;
+    height: 34px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: not-allowed;
+    content:''
+}
+/*
+#contentBox {
+    margin-right: 0;
+    margin-left: 0;
+   
+}
+*/
+.LayoutFix .fa.disabled, .fa[disabled]{
+	opacity: 1;
+	color: #666;
+}
+.clsDisplayNone{
+	display:none !important;
+}
+
+p.headingView {
+    background-color: #00adef;
+    padding: 3px 5px 0px 5px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.noRecord {
+    color: #333;
+    font-size: 16px;
+    display:none;
+}
+
+#s4-workspace {
+    /*overflow: auto;
+    min-height: 100%;
+    margin-bottom: -115px;*/
+}
+/*#s4-bodyContainer {
+    padding-bottom: 120px; 
+    overflow: hidden;
+    min-height: 100%;
+    margin-bottom: -115px;
+}
+.ms-core-overlay {
+    background-color:transparent; 
+}
+
+footer, #s4-bodyContainer:after {
+    height: 115px;
+}
+
+*/
+.fa.disabled, .fa[disabled]{
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65;
+}
+.clsScroll{
+	overflow:auto;
+}
+
+.clsGuidence{
+	display: inline-block;
+    color: #2098d1;	
+    float:right;
+    font-size:14px;
+}
+
+.sp-peoplepicker-topLevel{
+	/*width: 259px !important;
+    height: 34px;
+    padding-top: 6px;
+    border-radius: 5px;*/
+}
+.clsInputBoxMsg {
+    color: #ababab;
+    font-style: italic;
+    font-size: 10px;
+}
+.layout{
+    padding: 16px 0px;
+    background-color: #f2f2f2;
+    margin-bottom: 0;
+
+    
+	
+}
+.inputSection {
+     margin: 0 auto;
+}
+.u-wm-master .u-wm-main-box .ms-rtestate-field ol, .u-wm-master .u-wm-main-box .ms-rtestate-field ul{
+	
+	
+	    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0;
+    padding-top: 0;
+    left:0 !important;
+}
+.u-wm-master .u-wm-main-box .ms-rtestate-field li{
+	    margin-bottom: 5px;
+}
+.actionBtn .mg5 {
+    margin-right: 4px;
+}
+.topPedd{
+	margin-top:20px;
+}
+.sp-peoplepicker-topLevel{
+	 font-size: 1em;
+    line-height: 1.4;
+    color: #000;
+    max-width: 100%;
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+input.ms-helperText {
+    color: #777;
+    font-size: 12px;
+}
+
+.btn-M {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#fileTable tr th{
+	display:none;
+}
+#fileTable>tbody>tr>td{
+	padding-left:10px;
+}
+
+#fileTable>tbody>tr>td:last-child {
+    border-radius: 0px 6px 6px 0px;
+    border-right-width: 1px;
+    color:#3F51B5
+    /*width: 40px;
+    padding-left: 13px;*/
+}
+#fileTable span{
+	color:red;
+}
+
+.u-wm-all-box>.row {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+}
+.btn-sbmt{
+       display: none !important;
+}
+
+button.clsUploadDocs{
+    background-color: #01a8dd;
+    top: 24px;
+    border-radius: 3px;
+    width: auto;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 12px;
+    border: 0px solid transparent;
+    display: block;
+    line-height: 1.428571429;
+   
+    margin: 0;
+    margin-bottom: 5px;
+}
+.clsUploadedFiles {
+	width: 100%;
+}
+.clsUploadedFiles a {
+    width: auto;
+    display: block;
+    float: left;
+    min-width: 50%;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    /* add padding to account for vertical scrollbar */
+    padding-right: 20px;
+}
+/* ======================== Master Css content hide ========================= */
+/* Start Code from master.css*/
+#sideNavBox{
+	display:none !important;
+}
+#s4-titlerow{
+	display:none !important;
+}
+#s4-ribbonrow{
+	display:none !important; 
+}
+/*#WebPartWPQ2_ChromeTitle{
+	display:none !important;
+}*/
+#DeltaPageStatusBar{
+	display:none !important;
+}
+.o365cs-nav-brandingText{
+	display:none !important;
+}
+/*End Code from master.css*/
+.contextual-navigation, .s4-breadcrumb{
+	display:none;
+}
+.ms-webpartzone-cell {
+    margin: auto auto 0px;
+}
+.cell-margin {
+    margin: 0;
+}
+.article-content, .welcome-content {
+    margin: 0px 0 0;
+}
+div.article, div.welcome {
+    padding: 0px 0px;
+    position:relative;
+    top:-30px;
+}
+/*Arun: 06 Sep 2016 Starts Here*/
+.u-wm-master #s4-workspace {
+/*	OVERFLOW: auto;	*/
+}
+.customSelect {
+	/*background: url(../../images/downArrow.png) no-repeat top 5px right 2px white;*/
+}
+.customSelect select {
+	width: 107%;
+}
+.dlPostion .customSelect select {
+	/*width: 108%;*/
+}
+li.pageNumber span {
+    top: -2px;
+    position: relative;
+    background-color: transparent;
+    border: 0px solid #ddd;
+    padding: 5px 3px;
+}
+/*Arun: 06 Sep 2016 Starts Here*/
+
+input[type=password][disabled], input[type=text][disabled], input[type=file][disabled], textarea[disabled], select[disabled], .sp-peoplepicker-topLevelDisabled, .ms-inputBoxDisabled{
+color:#000;
+	
+}
+/*Arun: 10 Oct 2016 Starts Here*/
+.dashboardContent {
+	
+}
+.dashboardContent .inputTxt{
+	
+}
+.dashboardContent .inputTxt > li{
+	width: 20% !important;
+	margin: 0 !important;
+}
+.dashboardContent .inputTxt > li > input{
+	font-weight:bold;
+	width:70px;
+	padding: 0;
+}
+.dashboardContent .inputTxt li .inputvalues  a{
+cursor: pointer;
+text-decoration: none;
+color: #00adef;
+}
+.dashboardContent .inputTxt > li > .inputvalues{
+	font-weight: bold;
+    width: 70px;
+    height: 23px;
+    padding: 2px;
+    background: #FFF;
+    margin: auto;
+    color: #00adef;
+    border-radius: 4px;
+
+}
+.dashboardContent .inputTxt > li > span{
+	padding-top: .5em;
+}
+.dashboardContent .topPedd {
+	margin-top: 10px;
+}
+.dashboardContent .topPedd .actionBtn .mg5 {
+	display: inline-block;
+	color: black;
+   /* margin: 0 5px 0 0 !important; */
+}
+.dashboardContent .topPedd .btn-tool:hover, .dashboardContent .topPedd .btn-tool.active {
+	color: #00adef !important;
+}
+.dashboardContent .topPedd .dlPostion {
+	
+}
+.dashboardContent .topPedd .dlPostion .customSelect {
+	margin-bottom: 7px;
+}
+.dashboardContent .inputSection {
+	
+}
+.dashboardContent .inputSection .clsScroll{
+	
+}
+.dashboardContent .inputSection .csTable{
+	border-spacing: 0 .3em;
+}
+.dashboardContent .inputSection .csTable > tbody > tr > td {
+	padding: 0;
+    word-break: break-word;
+    word-wrap: break-word !important;
+    box-sizing: border-box;
+}
+.dashboardContent .inputSection .LayoutFix > tbody > tr > td {
+	padding: 5px;
+    word-break: break-word;
+    word-wrap: break-word !important;
+    box-sizing: border-box;
+}
+.dashboardContent .inputSection .LayoutFix > tbody > tr > td > div{
+	padding: 3px 5px;
+    word-break: break-word;
+    word-wrap: break-word;
+    text-align: center;
+    display:inline-block;
+}
+
+.dashboardContent .inputSection .fixed-column > tbody > tr > td {
+	padding: 5px;
+    word-break: break-word;
+    word-wrap: break-word !important;
+    box-sizing: border-box;
+}
+.dashboardContent .inputSection .fixed-column > tbody > tr > td > div{
+	padding: 3px 5px;
+
+    word-break: break-word;
+    word-wrap: break-word;
+    text-align: center;
+}
+.dashboardContent .inputSection {
+	
+}
+.dashboardContent .inputSection .csTable > thead > tr > th{
+	padding: 0;
+    word-break: break-word;
+    word-wrap: break-word !important;
+    box-sizing: border-box;
+    min-width:80px;
+}
+.dashboardContent .inputSection .csTable > thead > tr > th > div{
+	padding: 3px 5px;
+	/*width: 175px !important;*/
+    word-break: break-word;
+    word-wrap: break-word;
+    text-align: center;
+    display:inline-block;
+}
+.dashboardContent .inputSection .LayoutFix > thead > tr > th{
+	font-weight: bold;
+	padding: 5px;
+    word-break: break-word;
+    word-wrap: break-word !important;
+    box-sizing: border-box;
+}
+.dashboardContent .inputSection .LayoutFix > thead > tr > th > div{
+	padding: 3px 5px;
+    word-break: break-word;
+    word-wrap: break-word;
+    text-align: center;
+     display:inline-block;
+}
+.dashboardContent .inputSection .fixed-column> thead > tr > th{
+	font-weight: bold;
+	padding: 5px;
+    word-break: break-word;
+    word-wrap: break-word !important;
+    box-sizing: border-box;
+    text-align:center;
+}
+.dashboardContent .inputSection .fixed-column> thead > tr > th > div{
+	padding: 3px 5px;
+
+    word-break: break-word;
+    word-wrap: break-word;
+    text-align: center;
+}
+/*
+.fixTableRq #RequestID {
+	height: 54px;
+}
+*/
+div.fixTableRq {
+	/*margin-left: -5px;*/
+}
+/*Arun: 10 Oct 2016 Ends Here*/
+/*
+.dashboardContent .inputSection .fixed-column > tbody > tr > td:first-child > div {
+    width: 150px !important;
+}
+
+.dashboardContent .inputSection .fixed-column > thead > tr > th:first-child > div{
+    width: 150px !important;
+}
+
+.dashboardContent .inputSection .LayoutFix > tbody > tr > td:first-child > div{
+    width: 150px !important;
+}
+.dashboardContent .inputSection .LayoutFix > thead > tr > th:first-child > div{
+    width: 150px !important;
+}*/
+
+/*Start Normal User View */ 
+th#RequestID, td[data-title="Request ID"] {
+    min-width: 134px !important;
+    white-space: nowrap;
+    text-align:center;
+}
+th#SRID, td[data-title="SR ID"] {
+  min-width: 134px !important;
+    white-space: nowrap;
+    text-align:center;
+}
+th#ProjectName,td[data-title="Project Name"] {
+	min-width: 180px;
+ 
+    text-align: center;
+    white-space: nowrap
+    }
+
+td[data-title="Project Name"], td[data-title="Request Description"], td[data-title="Status"], td[data-title="C/I/P Stages"], td[data-title="Requester"], td[data-title="Requester Contact Details"], 
+td[data-title="Business Function"], td[data-title="Region"], td[data-title="MCO"], td[data-title="Country"], td[data-title="Site Name"], td[data-title="SA Project Manager"], td[data-title="SA Project Manager Contact Details"],
+td[data-title="Vendor Name"], td[data-title="Vendor Project Manager"], td[data-title="Cost Center"], td[data-title="Currency"], td[data-title="Service Block"], td[data-title="Monthly Recurring Cost (MRC)"], td[data-title="One Time Cost (OTC)"],
+td[data-title="Total Cost (local currency)"], td[data-title="Total Cost (Euros)"]
+{
+    text-align: left !important;
+}
+
+
+th#Countries {
+    min-width: 154px;
+    text-align: center;
+}
+th#SRType, td[data-title="SR Type"] {
+    min-width: 90px;
+    white-space: nowrap;    
+    text-align: center;
+
+}
+th#Requester, td[data-title="Requester"] {
+    min-width: 104px;
+    white-space: nowrap;    
+    text-align: center;
+
+}
+th#ServiceBlock, td[data-title="Service Block"] {
+   
+    min-width: 130px;
+    text-align: center;
+}
+th#Vendors, td[data-title="Vendor Name"] {
+ 	 min-width: 124px;
+    text-align: center;
+    /* max-width: 180px; */
+    white-space: nowrap;}
+th#RequestCreatedDT, td[data-title="Date Request Created"] {
+    min-width: 110px;
+    text-align: center;
+}
+th#ProposalApprovedTargetDT, td[data-title="Target Proposal Approval Date"] {
+    min-width: 134px;
+    text-align: center;
+}
+th#RequestStatus, td[data-title="Status"]  {
+    min-width: 124px;
+    text-align: center;
+    /* max-width: 180px; */
+    white-space: nowrap;
+    }
+th#Created {
+     text-align: center;
+    min-width: 64px;
+}
+th#ID {
+    
+    text-align: center;
+    min-width: 94px;
+}
+/*****************/
+
+#tblLayoutFix th, #tblLayoutFix td{
+	min-width:84px;
+	     white-space: nowrap;
+	     text-align: center;
+}
+#tblLayoutFix th#IsPriority {
+    min-width: 104px !important;
+    white-space: normal;
+    text-align: center;
+}
+th#RequesterContact {
+    min-width: 150px;
+    white-space: normal;
+}
+th#ParentChild {
+    min-width: 114px;
+    white-space: normal;
+    /* text-align: left !important; */
+}
+th#ProjectorSmallOrder {
+    white-space: normal;
+    min-width: 124px;
+}
+th#RequestDocs {
+    white-space: normal;
+    min-width: 104px;
+}
+
+th#RequestID {
+    height: 56px;
+}
+th#ProposalVersion {
+    white-space: normal;
+    min-width: 124px;
+}
+th#ProposalRequiredDT, th#RequestedDeliveryDT {
+    white-space: normal;
+    min-width: 154px;
+}
+h#RequirementValidationSubmittedDT {
+    white-space: normal;
+    min-width: 214px;
+}
+th#RequestClosedDT, th#RequestCancelledDT {
+    white-space: normal;
+    min-width: 124px;
+}
+th#MRC, th#OTC {
+    white-space: normal;
+    min-width: 154px;
+}
+th#TotalCostOTCLocal, th#TotalCostOTCEuros {
+    white-space: normal;
+    min-width: 140px;
+}
+th#RequirementValidationSubmittedDT {
+    white-space: normal;
+    min-width: 214px;
+}
+
+th#TargetRequirementsApprovalDT {
+    white-space: normal;
+    min-width: 170px;
+}
+th#RequirementsApprovedDT {
+    white-space: normal;
+    min-width: 160px;
+}
+th#RequirementsValidationRAG {
+    white-space: normal;
+    min-width: 124px;
+}
+th#ProposalCreationSubmittedDT {
+    white-space: normal;
+    min-width: 194px;
+}
+th#TargetProposalCreationDT {
+    min-width: 140px;
+    white-space: normal;
+}
+th#ProposalCreatedDT, th#ProposalApprovalRAG {
+    white-space: normal;
+    min-width: 124px;
+}
+th#ProposalCreationRAG {
+    min-width: 120px;
+    white-space: normal;
+}
+th#Technically_x0020_Approved, th#DORequestedDT, th#TargetDOCreationDT, th#DOReceivedDT, th#DOCreationRAGDT  {
+    white-space: normal;
+    min-width: 114px;
+}
+th#ProposalApprovedTargetDT, th#TargetProjectDeliveryDT, th#ActualProjectDeliveryDT {
+    white-space: normal;
+    min-width: 140px;
+}
+
+th#ProposalApprovedDT {
+    white-space: normal;
+    min-width: 124px;
+}
+th#AgreedDeliveryDT{
+	white-space: normal;
+    min-width: 134px;
+
+}
+th#CustomerSatisficationScore{
+	white-space: normal;
+    min-width: 170px;
+
+}
+.LayoutFix th#RequestID {
+    text-align: center;
+    padding: 0;
+}
+.fixed-column th#RequestID {
+    min-width: 140px !important;
+}
+/*End Normal User View */ 
+.srMSGPopup{
+	color: red; font-size: 12px;
+}
+
+/*for document template*/
+
+.ulDocumentsList li{
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 1.5;
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid #e5e5e5;
+    margin: 0 0 12px 0;
+}
+
+
+.spnDocumentUrl a:focus,a:hover a:visited{
+     color:#fff !important;
+}
+.ulDocumentsList li:last-child{
+    border-bottom:none;
+}
+.ulDocumentsList li a:hover{
+    color:#fff;
+    text-decoration: none;
+}
+
+.clsDownloadDocs{
+  background-color: #01a8dd;
+    border-radius: 3px;
+    width: auto;
+    text-align: center;
+    color: #fff !important;
+    font-size: 14px;
+    padding: 6px 12px;
+    border: 0px solid transparent;
+    display: inline-block;
+    line-height: 1.428571429;
+    margin: 0px 0px 12px 0px;
+    float:right;
+}
+
+.ulDocumentsList{
+    padding:0px;
+}
+  .ulDocumentsList .spnDocumentName  {
+   width: calc(100% - 108px);
+    word-wrap: break-word;
+    float: left;
+    text-align: left;}
+
+    .ulDocumentsList .dwnld-icon{
+        padding-left:5px;
+    }
+.fixTableRq a:visited{
+    color:#007dbb;
+}
+.btn 
+{
+    padding: 6px 6px !important;
+    font-size: 13px !important;
+}
+#contentBox{
+    margin-left: 0px !important;
+}
+/*hide the space on report screen*/
+
+

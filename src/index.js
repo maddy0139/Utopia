@@ -1,5 +1,12 @@
 import React from 'react';
 import { render } from 'react-dom';
 import App from './components/App';
-
+import './style/custom.css';
+import './style/hover.css';
+import './style/main.css';
+import './style/font-awesome.css';
+import * as $ from 'jquery';
+import './style/font-awesome.min.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 render(<App />, document.getElementById('root'));
