@@ -1,11 +1,12 @@
 import React from 'react';
+import Paging from './Paging';
 
 class Requestor extends React.Component{
 
     render()
     {
         return(
-            <section classNameName="inputSection text-center">
+            <section className="inputSection text-center">
                 <div className="container" style={{"width": "1240px"}}>
                     <div className="row">
                         <div className="col-md-12">
@@ -209,7 +210,8 @@ class Requestor extends React.Component{
                         </div>
                         </div>
                     </div>
-                </div> 
+                </div>
+                <Paging/> 
             </section>
         );
     }

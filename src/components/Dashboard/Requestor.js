@@ -5,12 +5,12 @@ class Requestor extends React.Component{
     render()
     {
         return(
-            <section classNameName="inputSection text-center">
+            <section className="inputSection text-center">
                 <div className="container" style={{"width": "1240px"}}>
                     <div className="row">
                         <div className="col-md-12">
-                           <div id="no-more-tables" className="clsScroll" style="display: block;">
-                                <table className="csTable cf" id="RequestsTable" style=""> 
+                           <div id="no-more-tables" className="clsScroll" style={{"display": "block"}}>
+                                <table className="csTable cf" id="RequestsTable"> 
                                     <thead className="cf">
                                         <tr>
                                             <th id="RequestID">
@@ -75,10 +75,37 @@ class Requestor extends React.Component{
                             </table>
                             <div className="noRecord">No Records Found</div>
                             </div>
-                        </div>
+                            </div>
                     </div>
                 </div>
-            </section>
+                <div className="cspage text-right">
+                    <ul className="pagination pagination-sm" style={{"marginRight":"58px","marginTop":"11px"}}>
+                        <li id="idFirstPage" style={{"display": "none"}}><a href="#" className="fa fa-angle-double-left"></a></li>
+                        <li id="idFirstPageTemp" className="disabled"><a href="#" className="fa fa-angle-double-left"></a></li>
+                        <li id="idPriviousPage" style={{"margin-right": "4px","display": "none"}}><a href="#" className="fa fa-angle-left"></a></li>
+                        <li id="idPriviousPageTemp" className="disabled" style={{"margin-right": "4px"}}><a href="#" className="fa fa-angle-left"></a></li>
+                        <select id="idPages">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <li className="pageNumber"><span>1 of  1</span></li>
+                        <li id="idNextPage" style={{"margin-right": "4px"}}><a href="#" className="fa fa-angle-right"></a></li>
+                        <li id="idNextPageTemp" className="disabled" style={{"margin-right": "4px","display":"none"}}><a href="#" className="fa fa-angle-right"></a></li>
+                        <li id="idLastPage"><a href="#" className="fa fa-angle-double-right"></a></li>
+                        <li id="idLastPageTemp" className="disabled" style={{"display": "none"}}><a href="#" className="fa fa-angle-double-right"></a></li>
+                    </ul>
+                </div>
+                </section>
         );
     }
 }
