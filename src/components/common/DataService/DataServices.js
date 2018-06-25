@@ -9,7 +9,8 @@ const Constants = {
 };
 Constants.Lists = {
     REQUESTS : "Requests",
-    STATUS : "status"
+    STATUS : "status",
+    COUNTRY:"Country"
 };
 pnp.setup({
     sp: {
@@ -95,4 +96,28 @@ DataServices.GetRequestStatus =()=>{
     });
 }
 
+DataServices.GetCountryList =()=>{
+    return new Promise((resolve,reject) =>{
+        pnp.sp.web.lists.getByTitle(Constants.Lists.COUNTRY).items
+        .select("Title")
+        .get().then(countries =>{
+            resolve(countries);
+        },error => {
+            reject(error);
+        });
+    });
+}
+
+DataServices.GetAllRequest = ()=>{
+    return new Promise((resolve,reject) =>{
+        pnp.sp.web.lists.getByTitle(Constants.Lists.REQUESTS).items
+        .select("*")
+        //.expand("SRType","ServiceBlock")
+        .get().then(requests =>{
+            resolve(requests);
+        },error => {
+            reject(error);
+        });
+    });
+}
 export default DataServices;

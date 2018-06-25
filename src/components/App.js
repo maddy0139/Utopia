@@ -14,31 +14,52 @@ class App extends Component {
             awaitingQualityCount:0,
             awaitingProposalCount:0,
             awaitingDoCount:0,
-            allStatusType:[]
+            allStatusType:[],
+            countries:[]
         };
     }
 
     componentDidMount(){
         DataServices.GetAllRequestCount().then(count=>{
-            this.setState({totalRequests:count});
+            this.SetTotalRequestCount(count);
         });
         DataServices.GetAwaitingReqReviewCount().then(count=>{
-            this.setState({awaitingReqCount:count});
+            this.SetAwaitingReqReviewCount(count);
         });
         DataServices.GetAwaitingQualityReviewCount().then(count=>{
-            this.setState({awaitingQualityCount:count});
+            this.SetAwaitingQualityReviewCount(count);
         });
         DataServices.GetAwaitingProposalApprovalCount().then(count=>{
-            this.setState({awaitingProposalCount:count});
+            this.SetAwaitingProposalApprovalCount(count);
         });
         DataServices.GetAwaitingDOCount().then(count=>{
-            this.setState({awaitingDoCount:count});
+            this.SetAwaitingDOCount(count);
         });
         DataServices.GetRequestStatus().then(allStatus =>{
             this.SetStatus(allStatus);
         });
+        DataServices.GetCountryList().then(countries =>{
+            this.SetCountries(countries);
+        });
+        DataServices.GetAllRequest().then(requests =>{
+            console.log(requests);
+        });
     }
-
+    SetTotalRequestCount(count){
+        this.setState({totalRequests:count});
+    }
+    SetAwaitingReqReviewCount(count){
+        this.setState({awaitingReqCount:count});
+    }
+    SetAwaitingQualityReviewCount(count){
+        this.setState({awaitingQualityCount:count});
+    }
+    SetAwaitingProposalApprovalCount(count){
+        this.setState({awaitingProposalCount:count});
+    }
+    SetAwaitingDOCount(count){
+        this.setState({awaitingDoCount:count});
+    }
     SetStatus(allStatus) 
     {
         let reactHandler = this;
@@ -50,6 +71,16 @@ class App extends Component {
         reactHandler.setState({allStatusType:arrayVar});
         
     }
+    SetCountries(countries)
+    {
+        let reactHandler = this;
+        let arrayVar = reactHandler.state.countries.splice(0);
+        arrayVar.push({"Title":"All Countries"});
+        $.each(countries,(index,item)=>{
+            arrayVar.push({"Title":item.Title});
+        });
+        reactHandler.setState({countries:arrayVar});
+    }
     render()
     {
         return (
@@ -59,7 +90,7 @@ class App extends Component {
                              awaitingQualityCount={this.state.awaitingQualityCount}
                              awaitingProposalCount={this.state.awaitingProposalCount}
                              awaitingDoCount={this.state.awaitingDoCount}/>
-            <TopFilters allStatusType={this.state.allStatusType}/>
+            <TopFilters allStatusType={this.state.allStatusType} countries={this.state.countries}/>
             <DashboardGrid/>
         </div>
         );

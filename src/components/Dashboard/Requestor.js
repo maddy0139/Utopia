@@ -1,4 +1,5 @@
 import React from 'react';
+import Paging from './Paging';
 
 class Requestor extends React.Component{
 
@@ -6,11 +7,11 @@ class Requestor extends React.Component{
     {
         return(
             <section className="inputSection text-center">
-                <div className="container" style={{"width": "1240px"}}>
+                <div className="container" style={{ "width": "1240px"}}>
                     <div className="row">
                         <div className="col-md-12">
-                           <div id="no-more-tables" className="clsScroll" style={{"display": "block"}}>
-                                <table className="csTable cf" id="RequestsTable"> 
+                            <div id="no-more-tables" className="clsScroll" style={{ "display": "block"}}>
+                                <table className="csTable cf" id="RequestsTable">
                                     <thead className="cf">
                                         <tr>
                                             <th id="RequestID">
@@ -18,10 +19,10 @@ class Requestor extends React.Component{
                                                     <a href="#" className="fa fa-sort-alpha-desc" id="RequestID" order="dsc" type="Text"></a>
                                                 </div>
                                             </th>
-                                                <th id="SRID">
-                                                    <div>SR ID
-                                                        <a href="#" className="fa fa-sort-alpha-asc" id="SRID" order="asc" type="Text"></a>
-                                                    </div>
+                                            <th id="SRID">
+                                                <div>SR ID
+                                                    <a href="#" className="fa fa-sort-alpha-asc" id="SRID" order="asc" type="Text"></a>
+                                                </div>
                                             </th>
                                             <th id="ProjectName">
                                                 <div>Request Title
@@ -31,7 +32,7 @@ class Requestor extends React.Component{
                                             <th id="Countries">
                                                 <div>Country
                                                     <a href="#" className="fa fa-sort-alpha-asc" id="Countries" order="asc" type="Text"></a>
-                                            </div>
+                                                </div>
                                             </th>
                                             <th id="SRType">
                                                 <div>SR Type
@@ -70,42 +71,16 @@ class Requestor extends React.Component{
                                             </th>
                                         </tr>
                                     </thead>
-                                <tbody>
-                                </tbody>
-                            </table>
-                            <div className="noRecord">No Records Found</div>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                <div className="noRecord">No Records Found</div>
                             </div>
-                            </div>
+                        </div>
                     </div>
                 </div>
-                <div className="cspage text-right">
-                    <ul className="pagination pagination-sm" style={{"marginRight":"58px","marginTop":"11px"}}>
-                        <li id="idFirstPage" style={{"display": "none"}}><a href="#" className="fa fa-angle-double-left"></a></li>
-                        <li id="idFirstPageTemp" className="disabled"><a href="#" className="fa fa-angle-double-left"></a></li>
-                        <li id="idPriviousPage" style={{"margin-right": "4px","display": "none"}}><a href="#" className="fa fa-angle-left"></a></li>
-                        <li id="idPriviousPageTemp" className="disabled" style={{"margin-right": "4px"}}><a href="#" className="fa fa-angle-left"></a></li>
-                        <select id="idPages">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                        </select>
-                        <li className="pageNumber"><span>1 of  1</span></li>
-                        <li id="idNextPage" style={{"margin-right": "4px"}}><a href="#" className="fa fa-angle-right"></a></li>
-                        <li id="idNextPageTemp" className="disabled" style={{"margin-right": "4px","display":"none"}}><a href="#" className="fa fa-angle-right"></a></li>
-                        <li id="idLastPage"><a href="#" className="fa fa-angle-double-right"></a></li>
-                        <li id="idLastPageTemp" className="disabled" style={{"display": "none"}}><a href="#" className="fa fa-angle-double-right"></a></li>
-                    </ul>
-                </div>
-                </section>
+                <Paging/>
+            </section>
         );
     }
 }
