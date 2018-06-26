@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link, IndexLink} from 'react-router';
 
 class TopFilters extends React.Component {
     constructor(props)
@@ -26,9 +27,7 @@ class TopFilters extends React.Component {
                             <a href="https://unilever.sharepoint.com/sites/QA_utopia/pages/Reports.aspx" id="idReports" className="btn btn-tool mg5 mgb5 hvr-underline-from-left clsReportRequest">
                                 Reports
                             </a>
-                            <a href="https://unilever.sharepoint.com/sites/QA_utopia/pages/AddServiceRequest.aspx" id="idAddRequest" className="btn btn-tool mg5 mgb5 hvr-underline-from-left clsAddRequest">
-                                Add New Request
-                            </a>
+                            <Link to="addNewRequest" id="idAddRequest" className="btn btn-tool mg5 mgb5 hvr-underline-from-left clsAddRequest">Add New Request</Link>
                             <a href="#" id="idGetDocuments" className="btn btn-tool mg5 mgb5 hvr-underline-from-left clsGetDocuments">
                                 Document Templates
                             </a>

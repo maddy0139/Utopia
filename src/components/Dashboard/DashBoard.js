@@ -1,14 +1,10 @@
 import React, { Component ,PropTypes} from 'react';
-import StatusIndicator from './Dashboard/StatusIndicator';
-import TopFilters from './Dashboard/TopFilters';
-import DashboardGrid from './Dashboard/DashboardGrid';
-import DataServices from './common/DataService/DataServices';
-import AddNewRequest from './AddNewRequest/AddNewRequest';
-import Header from './common/Header';
-import { Switch, Route, Link } from "react-router-dom"
-import DashBoard from './Dashboard/DashBoard';
+import StatusIndicator from './StatusIndicator';
+import TopFilters from './TopFilters';
+import DashboardGrid from './DashboardGrid';
+import DataServices from '../common/DataService/DataServices';
 
-class App extends Component {
+class DashBoard extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -86,14 +82,16 @@ class App extends Component {
     render()
     {
         return (
-        <div className="content dashboardContent">
-            {this.props.children}
-        </div>
+            <div className="content dashboardContent">
+                <StatusIndicator totalRequests={this.state.totalRequests} 
+                                awaitingReqCount={this.state.awaitingReqCount}
+                                awaitingQualityCount={this.state.awaitingQualityCount}
+                                awaitingProposalCount={this.state.awaitingProposalCount}
+                                awaitingDoCount={this.state.awaitingDoCount}/>
+                <TopFilters allStatusType={this.state.allStatusType} countries={this.state.countries}/>
+                <DashboardGrid/>
+            </div>
         );
     }
 }
-App.PropTypes = {
-    children: PropTypes.object.isRequired  
-  };
-
-export default App;
+export default DashBoard;
