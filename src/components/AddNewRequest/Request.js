@@ -131,7 +131,7 @@ class Request extends React.Component
                             <div className="form-group ">
                                 <label className="reuester-req">How is the request being funded?
                                     <span className="" style={{"color": "red"}}>*</span>
-                                </label>1
+                                </label>
                                 <div className="customSelect">
                                     <select id="idRequestFunded" className="clsMandatory">
                                         <option value="-1">-Select-</option>

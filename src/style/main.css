@@ -293,7 +293,7 @@ span.note{
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 .customSelect select {
-    background: transparent;
+    background: #fff;
     -webkit-appearance: none;
     -ms-appearance: none;
     -moz-appearance: none;
@@ -1013,7 +1013,7 @@ i.csRed.fa.fa-circle {
     text-overflow: ellipsis;
 }
 .customSelect select {
-    background: transparent;
+    background: #fff;
     -webkit-appearance: none;
     -ms-appearance: none;
     -moz-appearance: none;
