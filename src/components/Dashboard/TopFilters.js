@@ -24,10 +24,8 @@ class TopFilters extends React.Component {
                             <a href="#" id="idMyDrafts" className="btn btn-tool mg5 mgb5 hvr-underline-from-left clsDraftRequest" data-toggle="tooltip" title="" data-original-title="Drafts will be automatically deleted after 30 days of inactivity.">
                                 My Drafts
                             </a>
-                            <a href="https://unilever.sharepoint.com/sites/QA_utopia/pages/Reports.aspx" id="idReports" className="btn btn-tool mg5 mgb5 hvr-underline-from-left clsReportRequest">
-                                Reports
-                            </a>
-                            <Link to="addNewRequest" id="idAddRequest" className="btn btn-tool mg5 mgb5 hvr-underline-from-left clsAddRequest">Add New Request</Link>
+                            <Link to="Reports" id="idReports" className="btn btn-tool mg5 mgb5 hvr-underline-from-left clsReportRequest">Reports</Link>
+                            <Link to="AddNewRequest/Request" id="idAddRequest" className="btn btn-tool mg5 mgb5 hvr-underline-from-left clsAddRequest">Add New Request</Link>
                             <a href="#" id="idGetDocuments" className="btn btn-tool mg5 mgb5 hvr-underline-from-left clsGetDocuments">
                                 Document Templates
                             </a>

@@ -82,7 +82,7 @@ class DashBoard extends Component {
     render()
     {
         return (
-            <div className="content dashboardContent">
+            <div >
                 <StatusIndicator totalRequests={this.state.totalRequests} 
                                 awaitingReqCount={this.state.awaitingReqCount}
                                 awaitingQualityCount={this.state.awaitingQualityCount}

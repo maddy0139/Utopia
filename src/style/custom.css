@@ -283,7 +283,7 @@ div.article, div.welcome {
 	/*background: url(../../images/downArrow.png) no-repeat top 5px right 2px white;*/
 }
 .customSelect select {
-	width: 107%;
+	width: 100%;
 }
 .dlPostion .customSelect select {
 	/*width: 108%;*/

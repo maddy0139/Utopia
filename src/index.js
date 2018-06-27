@@ -15,10 +15,13 @@ import {Provider} from 'react-redux';
 import { Router, Route, browserHistory,IndexRoute  } from 'react-router'
 import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
 import AddNewRequest from './components/AddNewRequest/AddNewRequest';
-import DashboardGrid from './components/Dashboard/DashboardGrid';
-import Requestor from './components/Dashboard/GDMTVendor';
 import DashBoard from './components/Dashboard/DashBoard';
-import Header from './components/common/Header';
+import SiteInformation from './components/AddNewRequest/SiteInformation';
+import SRType from './components/AddNewRequest/SRType';
+import FileAttachement from './components/AddNewRequest/FileAttachement';
+import Request from './components/AddNewRequest/Request';
+import Reports from './components/Reports/Reports';
+import ViewRequest from './components/ViewRequest.js/ViewRequest';
 
 const store = createStore(
         combineReducers({
@@ -32,8 +35,13 @@ render(
 <Router history={history}>
       <Route path="/" component={App}>
         <IndexRoute component={DashBoard}/>
-        <Route path="addNewRequest" component={AddNewRequest}/>
-        <Route path="App" component={App}/>
+        <Route path="AddNewRequest" component={AddNewRequest}/>
+        <Route path="AddNewRequest/Request" component={Request}/>
+        <Route path="AddNewRequest/SiteInformation" component={SiteInformation}/>
+        <Route path="AddNewRequest/SRType" component={SRType}/>
+        <Route path="AddNewRequest/FileAttachement" component={FileAttachement}/>
+        <Route path="Reports" component={Reports}/>
+        <Route path="ViewRequest" component={ViewRequest}/>
       </Route>
     </Router>
 </Provider>, 

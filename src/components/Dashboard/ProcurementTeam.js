@@ -1,5 +1,7 @@
 import React from 'react';
 import Paging from './Paging';
+import {Link} from 'react-router';
+
 
 class ProcurementTeam extends React.Component{
 
@@ -78,7 +80,7 @@ class ProcurementTeam extends React.Component{
                                         <tr id="tr_255">
                                             <td data-title="Request ID">
                                                 <div>
-                                                    <a href="https://unilever.sharepoint.com/sites/QA_utopia/pages/ViewServiceRequest.aspx?ReqId=255">GDM00000255</a>
+                                                    <Link to="ViewRequest">GDM00000255</Link>
                                                 </div>
                                             </td>
                                             <td data-title="SR ID">

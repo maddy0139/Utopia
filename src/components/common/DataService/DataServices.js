@@ -44,7 +44,7 @@ DataServices.GetAwaitingReqReviewCount =()=>{
             reject(error);
         });
     });
-}
+};
 DataServices.GetAwaitingQualityReviewCount =()=>{
     return new Promise((resolve,reject) =>{
         pnp.sp.web.lists.getByTitle(Constants.Lists.REQUESTS).items
@@ -57,7 +57,7 @@ DataServices.GetAwaitingQualityReviewCount =()=>{
             reject(error);
         });
     });
-}
+};
 DataServices.GetAwaitingProposalApprovalCount =()=>{
     return new Promise((resolve,reject) =>{
         pnp.sp.web.lists.getByTitle(Constants.Lists.REQUESTS).items
