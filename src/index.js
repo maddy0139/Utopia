@@ -22,6 +22,7 @@ import FileAttachement from './components/AddNewRequest/FileAttachement';
 import Request from './components/AddNewRequest/Request';
 import Reports from './components/Reports/Reports';
 import ViewRequest from './components/ViewRequest.js/ViewRequest';
+import BespokeReport from './components/BespokeReport';
 
 const store = createStore(
         combineReducers({
@@ -42,6 +43,7 @@ render(
         <Route path="AddNewRequest/FileAttachement" component={FileAttachement}/>
         <Route path="Reports" component={Reports}/>
         <Route path="ViewRequest" component={ViewRequest}/>
+        <Route path="BespokeReport" component={BespokeReport}/>
       </Route>
     </Router>
 </Provider>, 

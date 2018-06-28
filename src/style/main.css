@@ -412,6 +412,38 @@ My Request
     margin-bottom: 1.5em;
     padding: .7em;
     background-color: #fff;
+    width: 48%;
+    margin-left: 12px;
+    margin-right: 12px;
+    display: inline-block;
+    vertical-align:top;
+}
+.Collapsible span{
+    width: 100%
+}
+.Collapsible__trigger{
+    background: #00adef;
+    margin-left: 15px;
+    padding: 5px 5px 4px 5px;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.Collapsible__trigger.is-closed::after{
+    content: '\f067';
+    float: right;
+    font-size: 16px;
+    padding: 5px 5px 4px 5px;
+    font: normal normal normal 14px/1 FontAwesome;
+}
+.Collapsible__trigger.is-open::after{
+    content: '\f068';
+    float: right;
+    font-size: 16px;
+    padding: 5px 5px 4px 5px;
+    font: normal normal normal 14px/1 FontAwesome;
 }
 .csView .hlg{
 	min-height:230px;
