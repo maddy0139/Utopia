@@ -34,15 +34,15 @@ const history = syncHistoryWithStore(browserHistory, store);
 render(
 <Provider store={store}>
 <Router history={history}>
-      <Route path="/" component={App}>
+      <Route path="/sites/Box/pages/utopia.aspx" component={App}>
         <IndexRoute component={DashBoard}/>
-        <Route path="AddNewRequest" component={AddNewRequest}/>
-        <Route path="AddNewRequest/Request" component={Request}/>
-        <Route path="AddNewRequest/SiteInformation" component={SiteInformation}/>
-        <Route path="AddNewRequest/SRType" component={SRType}/>
+        <Route path="/sites/Box/pages/utopia.aspx/AddNewRequest" component={AddNewRequest}/>
+        <Route path="/sites/Box/pages/utopia.aspx/AddNewRequest/Request" component={Request}/>
+        <Route path="/sites/Box/pages/utopia.aspx/AddNewRequest/SiteInformation" component={SiteInformation}/>
+        <Route path="/sites/Box/pages/utopia.aspx/AddNewRequest/SRType" component={SRType}/>
         <Route path="AddNewRequest/FileAttachement" component={FileAttachement}/>
         <Route path="Reports" component={Reports}/>
-        <Route path="ViewRequest" component={ViewRequest}/>
+        <Route path="/sites/Box/pages/utopia.aspx/ViewRequest" component={ViewRequest}/>
         <Route path="BespokeReport" component={BespokeReport}/>
       </Route>
     </Router>

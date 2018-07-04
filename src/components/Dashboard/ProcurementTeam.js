@@ -5,6 +5,17 @@ import {Link} from 'react-router';
 
 class ProcurementTeam extends React.Component{
 
+    constructor(props)
+    {
+        super(props);
+        this.state={
+
+        };
+        this.SortData = this.SortData.bind(this);
+    }
+    SortData(sortType){
+        this.props.SortData(sortType);        
+    }
     render()
     {
         return(
@@ -18,55 +29,55 @@ class ProcurementTeam extends React.Component{
                                         <tr>
                                             <th id="RequestID">
                                                 <div>Request ID
-                                                    <a href="#" className="fa fa-sort-alpha-desc" id="RequestID" order="dsc" type="Text"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"Request ID")} className="fa fa-sort-alpha-asc" id="RequestID" order="dsc" type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="SRID">
                                                 <div>SR ID
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="SRID" order="asc" type="Text"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"SR ID")} className="fa fa-sort-alpha-asc" id="SRID" order="asc" type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="ProjectName">
                                                 <div>Request Title
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="ProjectName" order="asc"
+                                                    <a href="#" onClick={this.SortData.bind(this,"Request Title")} className="fa fa-sort-alpha-asc" id="ProjectName" order="asc"
                                                         type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="Countries">
                                                 <div>Country
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="Countries" order="asc" type="Text"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"Country")} className="fa fa-sort-alpha-asc" id="Countries" order="asc" type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="SRType">
                                                 <div>SR Type
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="SRType" order="asc" type="Lookup"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"SR Type")}className="fa fa-sort-alpha-asc" id="SRType" order="asc" type="Lookup"></a>
                                                 </div>
                                             </th>
                                             <th id="Vendors">
                                                 <div>Vendor Name
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="Vendors" order="asc" type="Text"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"Vendor Name")} className="fa fa-sort-alpha-asc" id="Vendors" order="asc" type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="RequestCreatedDT">
                                                 <div>Date Request Created
-                                                    <a href="#" className="fa fa-sort-alpha-desc" id="RequestCreatedDT"
+                                                    <a href="#" onClick={this.SortData.bind(this,"Date Requested Created")} className="fa fa-sort-alpha-desc" id="RequestCreatedDT"
                                                         order="dsc" type="Date"></a>
                                                 </div>
                                             </th>
                                             <th id="ProposalApprovedTargetDT">
                                                 <div>Target Proposal Approval Date
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="ProposalApprovedTargetDT"
+                                                    <a href="#" onClick={this.SortData.bind(this,"Target Proposal Approval Date")} className="fa fa-sort-alpha-asc" id="ProposalApprovedTargetDT"
                                                         order="asc" type="Date"></a>
                                                 </div>
                                             </th>
                                             <th id="RequestStatus">
                                                 <div>Status
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="RequestStatus" order="asc" type="Lookup"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"Status")} className="fa fa-sort-alpha-asc" id="RequestStatus" order="asc" type="Lookup"></a>
                                                 </div>
                                             </th>
                                             <th id="Created">
                                                 <div>Age
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="Created" order="asc" type="TicketAge"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"Age")} className="fa fa-sort-alpha-asc" id="Created" order="asc" type="TicketAge"></a>
                                                 </div>
                                             </th>
                                             <th id="ID">
@@ -80,7 +91,7 @@ class ProcurementTeam extends React.Component{
                                         <tr id="tr_255">
                                             <td data-title="Request ID">
                                                 <div>
-                                                    <Link to="ViewRequest">GDM00000255</Link>
+                                                    <Link to="/sites/Box/pages/utopia.aspx/ViewRequest">GDM00000255</Link>
                                                 </div>
                                             </td>
                                             <td data-title="SR ID">

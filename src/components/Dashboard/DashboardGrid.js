@@ -6,10 +6,20 @@ import ProcurementTeam from './ProcurementTeam';
 
 class DashboardGrid extends React.Component
 {
+    constructor(props)
+    {
+        super(props);
+        this.state = {
+        };
+        this.SortData = this.SortData.bind(this);
+    }
+    SortData(sortType){
+        this.props.SortData(sortType);
+    }
     render()
     {
         return(
-            <ProcurementTeam/>  
+            <SuperUser SortData = {this.SortData}/>  
         );
     }
 }

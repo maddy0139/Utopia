@@ -14,9 +14,13 @@ class DashBoard extends Component {
             awaitingProposalCount:0,
             awaitingDoCount:0,
             allStatusType:[],
-            countries:[]
+            countries:[],
+            SortType:"Ascending"
         };
+        this.SortData = this.SortData.bind(this);
     }
+
+    
 
     componentDidMount(){
         DataServices.GetAllRequestCount().then(count=>{
@@ -42,6 +46,14 @@ class DashBoard extends Component {
         });
         DataServices.GetAllRequest().then(requests =>{
         });
+    }
+    SortData(sortByType){
+        let srtType = (this.state.SortType === "Ascending") ? "Descending" : "Ascending";
+        let cssAddClass = (srtType === "Descending")  ? "fa-sort-alpha-desc" : "fa-sort-alpha-asc";
+        let cssRemoveClass = (srtType === "Descending")  ? "fa-sort-alpha-asc" : "fa-sort-alpha-desc";
+        this.setState({SortType:srtType});
+
+        $('th #'+sortByType).addClass(cssAddClass).removeClass(cssRemoveClass);
     }
     SetTotalRequestCount(count){
         this.setState({totalRequests:count});
@@ -89,7 +101,7 @@ class DashBoard extends Component {
                                 awaitingProposalCount={this.state.awaitingProposalCount}
                                 awaitingDoCount={this.state.awaitingDoCount}/>
                 <TopFilters allStatusType={this.state.allStatusType} countries={this.state.countries}/>
-                <DashboardGrid/>
+                <DashboardGrid SortData={this.SortData}/>
             </div>
         );
     }

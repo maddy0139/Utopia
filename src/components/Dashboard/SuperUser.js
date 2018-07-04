@@ -3,6 +3,17 @@ import Paging from './Paging';
 
 class Requestor extends React.Component{
 
+    constructor(props)
+    {
+        super(props);
+        this.state={
+
+        };
+        this.SortData = this.SortData.bind(this);
+    }
+    SortData(sortType){
+        this.props.SortData(sortType);        
+    }
     render()
     {
         return(
@@ -53,290 +64,290 @@ class Requestor extends React.Component{
                                         <tr>
                                             <th id="RequestID">
                                                 <div>Request ID
-                                                    <a href="#" className="fa fa-sort-alpha-desc" id="RequestID" order="dsc" type="Text"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"RequestID")} className="fa fa-sort-alpha-desc" id="RequestID" order="dsc" type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="SRID">
                                                 <div>SR ID
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="SRID" order="asc" type="Text"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"SRID")} className="fa fa-sort-alpha-asc" id="SRID" order="asc" type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="ProjectName">
                                                 <div>Request Title
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="ProjectName" order="asc"
+                                                    <a href="#" onClick={this.SortData.bind(this,"ProjectName")} className="fa fa-sort-alpha-asc" id="ProjectName" order="asc"
                                                         type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="ClarityID">
                                                 <div>Clarity ID
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="ClarityID" order="asc" type="Text"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"ClarityID")} className="fa fa-sort-alpha-asc" id="ClarityID" order="asc" type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="ParentChild">
                                                 <div>Is this a Child SR?
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="ParentChild" order="asc"
+                                                    <a href="#" onClick={this.SortData.bind(this,"ParentChild")} className="fa fa-sort-alpha-asc" id="ParentChild" order="asc"
                                                         type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="ParentSR">
                                                 <div>Parent SR No
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="ParentSR" order="asc" type="Text"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"ParentSR")} className="fa fa-sort-alpha-asc" id="ParentSR" order="asc" type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="ProjectDescription">
                                                 <div>Request Description
-                                                    <a href="#" className="" id="ProjectDescription" order="undefined"
+                                                    <a href="#" onClick={this.SortData.bind(this,"RequestDescription")} className="" id="ProjectDescription" order="undefined"
                                                         type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="RequestStatus">
                                                 <div>Status
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="RequestStatus" order="asc" type="Lookup"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"Status")} className="fa fa-sort-alpha-asc" id="RequestStatus" order="asc" type="Lookup"></a>
                                                 </div>
                                             </th>
                                             <th id="IsPriority">
                                                 <div>Expedite?
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="IsPriority" order="asc" type="Text"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"IsPriority")} className="fa fa-sort-alpha-asc" id="IsPriority" order="asc" type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="Created">
                                                 <div>Age
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="Created" order="asc" type="TicketAge"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"Created")} className="fa fa-sort-alpha-asc" id="Created" order="asc" type="TicketAge"></a>
                                                 </div>
                                             </th>
                                             <th id="Requester">
                                                 <div>Requester
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="Requester" order="asc" type="Lookup"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"Requester")} className="fa fa-sort-alpha-asc" id="Requester" order="asc" type="Lookup"></a>
                                                 </div>
                                             </th>
                                             <th id="RequesterContact">
                                                 <div>Requester Contact Details
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="RequesterContact"
+                                                    <a href="#" onClick={this.SortData.bind(this,"RequesterContact")} className="fa fa-sort-alpha-asc" id="RequesterContact"
                                                         order="asc" type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="Region">
                                                 <div>Region
-                                                    <a href="#" className="fa fa-sort-alpha-desc" id="Region" order="dsc" type="Text"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"Region")} className="fa fa-sort-alpha-desc" id="Region" order="dsc" type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="MCO">
                                                 <div>MCO
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="MCO" order="asc" type="Text"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"MCO")} className="fa fa-sort-alpha-asc" id="MCO" order="asc" type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="Countries">
                                                 <div>Country
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="Countries" order="asc" type="Text"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"Countries")} className="fa fa-sort-alpha-asc" id="Countries" order="asc" type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="SiteName">
                                                 <div>Site Name
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="SiteName" order="asc" type="Text"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"SiteName")} className="fa fa-sort-alpha-asc" id="SiteName" order="asc" type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="SRType">
                                                 <div>SR Type
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="SRType" order="asc" type="Lookup"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"SRType")} className="fa fa-sort-alpha-asc" id="SRType" order="asc" type="Lookup"></a>
                                                 </div>
                                             </th>
                                             <th id="AttachedDocuments">
                                                 <div>Attached Documents
-                                                    <a href="#" className="" id="AttachedDocuments" order="undefined" type="Text"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"AttachedDocuments")} className="" id="AttachedDocuments" order="undefined" type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="Vendors">
                                                 <div>Vendor Name
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="Vendors" order="asc" type="Text"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"Vendors")} className="fa fa-sort-alpha-asc" id="Vendors" order="asc" type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="ProposalVersion">
                                                 <div>Proposal Version No
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="ProposalVersion"
+                                                    <a href="#" onClick={this.SortData.bind(this,"ProposalVersion")}  className="fa fa-sort-alpha-asc" id="ProposalVersion"
                                                         order="asc" type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="VendorProjectManager">
                                                 <div>Vendor Project Manager
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="VendorProjectManager"
+                                                    <a href="#" onClick={this.SortData.bind(this,"VendiorProjectManager")} className="fa fa-sort-alpha-asc" id="VendorProjectManager"
                                                         order="asc" type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="ProposalRequiredDT">
                                                 <div>Proposal Required by Date
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="ProposalRequiredDT"
+                                                    <a href="#" onClick={this.SortData.bind(this,"ProposalRequiredDT")} className="fa fa-sort-alpha-asc" id="ProposalRequiredDT"
                                                         order="asc" type="Date"></a>
                                                 </div>
                                             </th>
                                             <th id="RequestedDeliveryDT">
                                                 <div>Requested Delivery Date by
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="RequestedDeliveryDT"
+                                                    <a href="#" onClick={this.SortData.bind(this,"RequestDeliveryDT")}  className="fa fa-sort-alpha-asc" id="RequestedDeliveryDT"
                                                         order="asc" type="Date"></a>
                                                 </div>
                                             </th>
                                             <th id="RequestSubmittedRequirementsAppr">
                                                 <div>Date Request Submitted for Requirements Approval
-                                                    <a href="#" className="fa fa-sort-alpha-asc"
+                                                    <a href="#" onClick={this.SortData.bind(this,"RequestSubmittedRequirementsAppr")} className="fa fa-sort-alpha-asc"
                                                         id="RequestSubmittedRequirementsAppr" order="asc" type="Date"></a>
                                                 </div>
                                             </th>
                                             <th id="RequestClosedDT">
                                                 <div>Date Request Closed
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="RequestClosedDT"
+                                                    <a href="#" onClick={this.SortData.bind(this,"RequestClosedDT")} className="fa fa-sort-alpha-asc" id="RequestClosedDT"
                                                         order="asc" type="Date"></a>
                                                 </div>
                                             </th>
                                             <th id="RequestCancelledDT">
                                                 <div>Date Request Cancelled
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="RequestCancelledDT"
+                                                    <a href="#" onClick={this.SortData.bind(this,"RequestCancelledDT")}  className="fa fa-sort-alpha-asc" id="RequestCancelledDT"
                                                         order="asc" type="Date"></a>
                                                 </div>
                                             </th>
                                             <th id="CostCenter">
                                                 <div>Cost Center
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="CostCenter" order="asc" type="Text"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"CostCenter")}  className="fa fa-sort-alpha-asc" id="CostCenter" order="asc" type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="CurrencyTypeLocal">
                                                 <div>Currency
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="CurrencyTypeLocal" order="asc"
+                                                    <a href="#" onClick={this.SortData.bind(this,"CurrencyTypeLocal")} className="fa fa-sort-alpha-asc" id="CurrencyTypeLocal" order="asc"
                                                         type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="MRC">
                                                 <div>Monthly Recurring Cost (MRC)
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="MRC" order="asc"
+                                                    <a href="#" onClick={this.SortData.bind(this,"MRC")} className="fa fa-sort-alpha-asc" id="MRC" order="asc"
                                                         type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="OTC">
                                                 <div>One Time Cost (OTC) Euros
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="OTC" order="asc"
+                                                    <a href="#" onClick={this.SortData.bind(this,"OTC")}  className="fa fa-sort-alpha-asc" id="OTC" order="asc"
                                                         type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="TotalCostOTCLocal">
                                                 <div>Total Cost (local currency)
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="TotalCostOTCLocal"
+                                                    <a href="#" onClick={this.SortData.bind(this,"TotalCostOTCLocal")} className="fa fa-sort-alpha-asc" id="TotalCostOTCLocal"
                                                         order="asc" type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="TotalCostOTCEuros">
                                                 <div>Total Cost (Euros)
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="TotalCostOTCEuros"
+                                                    <a href="#" onClick={this.SortData.bind(this,"TotalCostOTCEuros")}  className="fa fa-sort-alpha-asc" id="TotalCostOTCEuros"
                                                         order="asc" type="Text"></a>
                                                 </div>
                                             </th>
                                             <th id="RequestSubmittedRequirementsAppr">
                                                 <div>Date Request Submitted for Requirements Approval
-                                                    <a href="#" className="fa fa-sort-alpha-asc"
+                                                    <a href="#" onClick={this.SortData.bind(this,"RequestSubmittedRequirementAppr")} className="fa fa-sort-alpha-asc"
                                                         id="RequestSubmittedRequirementsAppr" order="asc" type="Date"></a>
                                                 </div>
                                             </th>
                                             <th id="TargetRequirementsApprovalDT">
                                                 <div>Target Requirements Approval Date
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="TargetRequirementsApprovalDT"
+                                                    <a href="#" onClick={this.SortData.bind(this,"TargetRequirementsApprovalDT")}  className="fa fa-sort-alpha-asc" id="TargetRequirementsApprovalDT"
                                                         order="asc" type="Date"></a>
                                                 </div>
                                             </th>
                                             <th id="RequirementsApprovedDT">
                                                 <div>Date Requirements Approved
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="RequirementsApprovedDT"
+                                                    <a href="#" onClick={this.SortData.bind(this,"RequirementsApprovedDT")} className="fa fa-sort-alpha-asc" id="RequirementsApprovedDT"
                                                         order="asc" type="Date"></a>
                                                 </div>
                                             </th>
                                             <th id="RequirementsValidationRAG">
                                                 <div>Requirements Approval RAG
-                                                    <a href="#" className="" id="RequirementsValidationRAG" order="undefined"
+                                                    <a href="#" className="" onClick={this.SortData.bind(this,"RequirementsValidationRAG")}  id="RequirementsValidationRAG" order="undefined"
                                                         type="RAG"></a>
                                                 </div>
                                             </th>
                                             <th id="ProposalCreationSubmittedDT">
                                                 <div>Date Request Submitted for Proposal Creation
-                                                    <a href="#" className="fa fa-sort-alpha-asc"
+                                                    <a href="#" onClick={this.SortData.bind(this,"ProposalCreationSubmittedDT")} className="fa fa-sort-alpha-asc"
                                                         id="ProposalCreationSubmittedDT" order="asc" type="Date"></a>
                                                 </div>
                                             </th>
                                             <th id="TargetProposalCreationDT">
                                                 <div>Target Proposal Creation Date
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="TargetProposalCreationDT"
+                                                    <a href="#" onClick={this.SortData.bind(this,"TargetProposalCreationDT")} className="fa fa-sort-alpha-asc" id="TargetProposalCreationDT"
                                                         order="asc" type="Date"></a>
                                                 </div>
                                             </th>
                                             <th id="ProposalCreatedDT">
                                                 <div>Date Proposal Created
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="ProposalCreatedDT"
+                                                    <a href="#" onClick={this.SortData.bind(this,"ProposalCreatedDT")} className="fa fa-sort-alpha-asc" id="ProposalCreatedDT"
                                                         order="asc" type="Date"></a>
                                                 </div>
                                             </th>
                                             <th id="ProposalCreationRAG">
                                                 <div>Proposal Creation RAG
-                                                    <a href="#" className="" id="ProposalCreationRAG" order="undefined"
+                                                    <a href="#" onClick={this.SortData.bind(this,"ProposalCreationRAG")} className="" id="ProposalCreationRAG" order="undefined"
                                                         type="RAG"></a>
                                                 </div>
                                             </th>
                                             <th id="ProposalApprovedTargetDT">
                                                 <div>Target Proposal Approval Date
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="ProposalApprovedTargetDT"
+                                                    <a href="#" onClick={this.SortData.bind(this,"ProposalApprovedTargetDT")} className="fa fa-sort-alpha-asc" id="ProposalApprovedTargetDT"
                                                         order="asc" type="Date"></a>
                                                 </div>
                                             </th>
                                             <th id="ProposalApprovedDT">
                                                 <div>Date Proposal Approved
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="ProposalApprovedDT"
+                                                    <a href="#" onClick={this.SortData.bind(this,"ProposalApprovedDT")} className="fa fa-sort-alpha-asc" id="ProposalApprovedDT"
                                                         order="asc" type="Date"></a>
                                                 </div>
                                             </th>
                                             <th id="ProposalApprovalRAG">
                                                 <div>Proposal Approval RAG
-                                                    <a href="#" className="" id="ProposalApprovalRAG" order="undefined"
+                                                    <a href="#" onClick={this.SortData.bind(this,"ProposalApprovalRAG")} className="" id="ProposalApprovalRAG" order="undefined"
                                                         type="RAG"></a>
                                                 </div>
                                             </th>
                                             <th id="DORequestedDT">
                                                 <div>Date DO requested
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="DORequestedDT" order="asc"
+                                                    <a href="#" onClick={this.SortData.bind(this,"DORequestedDT")} className="fa fa-sort-alpha-asc" id="DORequestedDT" order="asc"
                                                         type="Date"></a>
                                                 </div>
                                             </th>
                                             <th id="TargetDOCreationDT">
                                                 <div>Target DO Creation
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="TargetDOCreationDT"
+                                                    <a href="#" onClick={this.SortData.bind(this,"TargetDOCreationDT")} className="fa fa-sort-alpha-asc" id="TargetDOCreationDT"
                                                         order="asc" type="Date"></a>
                                                 </div>
                                             </th>
                                             <th id="DOReceivedDT">
                                                 <div>Date DO received
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="DOReceivedDT" order="asc"
+                                                    <a href="#" onClick={this.SortData.bind(this,"DOReceiveDT")} className="fa fa-sort-alpha-asc" id="DOReceivedDT" order="asc"
                                                         type="Date"></a>
                                                 </div>
                                             </th>
                                             <th id="DOCreationRAGDT">
                                                 <div>DO Creation RAG
-                                                    <a href="#" className="" id="DOCreationRAGDT" order="undefined" type="RAG"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"DOCreationRAGDT")} className="" id="DOCreationRAGDT" order="undefined" type="RAG"></a>
                                                 </div>
                                             </th>
                                             <th id="AgreedDeliveryDT">
                                                 <div>Agreed Delivery Date (ADD)
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="AgreedDeliveryDT"
+                                                    <a href="#" onClick={this.SortData.bind(this,"AgreedDeliverDT")} className="fa fa-sort-alpha-asc" id="AgreedDeliveryDT"
                                                         order="asc" type="Date"></a>
                                                 </div>
                                             </th>
                                             <th id="TargetProjectDeliveryDT">
                                                 <div>Target Project Delivery Date
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="TargetProjectDeliveryDT"
+                                                    <a href="#" onClick={this.SortData.bind(this,"TargetProjectDeliveryDT")} className="fa fa-sort-alpha-asc" id="TargetProjectDeliveryDT"
                                                         order="asc" type="Date"></a>
                                                 </div>
                                             </th>
                                             <th id="ActualProjectDeliveryDT">
                                                 <div>Actual Project Delivery Date
-                                                    <a href="#" className="fa fa-sort-alpha-asc" id="ActualProjectDeliveryDT"
+                                                    <a href="#" onClick={this.SortData.bind(this,"ActualProjectDeliveryDT")} className="fa fa-sort-alpha-asc" id="ActualProjectDeliveryDT"
                                                         order="asc" type="Date"></a>
                                                 </div>
                                             </th>
                                             <th id="_Comments">
                                                 <div>Comments
-                                                    <a href="#" className="" id="_Comments" order="undefined" type="Comments"></a>
+                                                    <a href="#" onClick={this.SortData.bind(this,"Comments")} className="" id="_Comments" order="undefined" type="Comments"></a>
                                                 </div>
                                             </th>
                                             <th id="ID">
